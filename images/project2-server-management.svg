@@ -1,70 +1,146 @@
 <svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg-gradient-2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
     </linearGradient>
     <linearGradient id="server-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#374151;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#1f2937;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#111827;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="monitor-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="laravel-red" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF2D20;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6B35;stop-opacity:1" />
     </linearGradient>
   </defs>
   
   <!-- Background -->
   <rect width="400" height="300" fill="url(#bg-gradient-2)"/>
   
+  <!-- Grid Pattern -->
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="400" height="300" fill="url(#grid)"/>
+  
   <!-- Server Rack -->
-  <rect x="60" y="60" width="120" height="180" fill="url(#server-gradient)" rx="8"/>
-  <rect x="70" y="70" width="100" height="20" fill="#1f2937" rx="4"/>
-  <circle cx="85" cy="80" r="3" fill="#22c55e"/>
-  <circle cx="95" cy="80" r="3" fill="#22c55e"/>
-  <rect x="110" y="76" width="50" height="8" fill="#374151" rx="2"/>
+  <rect x="40" y="50" width="140" height="200" fill="url(#server-gradient)" rx="12"/>
+  <rect x="45" y="55" width="130" height="8" fill="#374151" rx="4"/>
+  <text x="110" y="72" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#9ca3af" text-anchor="middle">SERVER RACK</text>
   
-  <rect x="70" y="100" width="100" height="20" fill="#1f2937" rx="4"/>
-  <circle cx="85" cy="110" r="3" fill="#22c55e"/>
-  <circle cx="95" cy="110" r="3" fill="#f59e0b"/>
-  <rect x="110" y="106" width="50" height="8" fill="#374151" rx="2"/>
+  <!-- Server Units -->
+  <rect x="50" y="80" width="120" height="25" fill="#1f2937" rx="6"/>
+  <circle cx="65" cy="92" r="4" fill="#22c55e"/>
+  <circle cx="75" cy="92" r="4" fill="#22c55e"/>
+  <rect x="90" y="88" width="70" height="8" fill="#374151" rx="2"/>
+  <text x="155" y="97" font-family="Arial, sans-serif" font-size="8" fill="#d1d5db" text-anchor="middle">Web Server</text>
   
-  <rect x="70" y="130" width="100" height="20" fill="#1f2937" rx="4"/>
-  <circle cx="85" cy="140" r="3" fill="#22c55e"/>
-  <circle cx="95" cy="140" r="3" fill="#22c55e"/>
-  <rect x="110" y="136" width="50" height="8" fill="#374151" rx="2"/>
+  <rect x="50" y="110" width="120" height="25" fill="#1f2937" rx="6"/>
+  <circle cx="65" cy="122" r="4" fill="#22c55e"/>
+  <circle cx="75" cy="122" r="4" fill="#f59e0b"/>
+  <rect x="90" y="118" width="70" height="8" fill="#374151" rx="2"/>
+  <text x="155" y="127" font-family="Arial, sans-serif" font-size="8" fill="#d1d5db" text-anchor="middle">DB Server</text>
+  
+  <rect x="50" y="140" width="120" height="25" fill="#1f2937" rx="6"/>
+  <circle cx="65" cy="152" r="4" fill="#22c55e"/>
+  <circle cx="75" cy="152" r="4" fill="#22c55e"/>
+  <rect x="90" y="148" width="70" height="8" fill="#374151" rx="2"/>
+  <text x="155" y="157" font-family="Arial, sans-serif" font-size="8" fill="#d1d5db" text-anchor="middle">Cache Server</text>
+  
+  <rect x="50" y="170" width="120" height="25" fill="#1f2937" rx="6"/>
+  <circle cx="65" cy="182" r="4" fill="#ef4444"/>
+  <circle cx="75" cy="182" r="4" fill="#22c55e"/>
+  <rect x="90" y="178" width="70" height="8" fill="#374151" rx="2"/>
+  <text x="155" y="187" font-family="Arial, sans-serif" font-size="8" fill="#d1d5db" text-anchor="middle">Backup Server</text>
   
   <!-- Monitoring Dashboard -->
-  <rect x="200" y="40" width="180" height="140" fill="white" rx="12"/>
-  <rect x="200" y="40" width="180" height="30" fill="#f8fafc" rx="12"/>
-  <text x="290" y="58" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#1f2937" text-anchor="middle">Server Monitor</text>
+  <rect x="200" y="30" width="180" height="160" fill="url(#monitor-gradient)" rx="16"/>
+  <rect x="200" y="30" width="180" height="35" fill="#1f2937" rx="16"/>
+  <text x="290" y="50" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Server Monitor Dashboard</text>
   
-  <!-- Charts -->
-  <rect x="210" y="80" width="70" height="50" fill="#f3f4f6" rx="4"/>
-  <path d="M215 120 L225 110 L235 115 L245 100 L255 105 L265 95 L275 100" stroke="#22c55e" stroke-width="2" fill="none"/>
-  <text x="242" y="140" font-family="Arial, sans-serif" font-size="10" fill="#374151" text-anchor="middle">CPU</text>
+  <!-- Laravel 12 Badge in Dashboard -->
+  <rect x="210" y="40" width="60" height="18" fill="url(#laravel-red)" rx="9"/>
+  <text x="240" y="51" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Laravel 12</text>
   
-  <rect x="290" y="80" width="80" height="50" fill="#f3f4f6" rx="4"/>
-  <circle cx="330" cy="105" r="20" stroke="#06b6d4" stroke-width="6" fill="none" stroke-dasharray="40 20"/>
-  <text x="330" y="109" font-family="Arial, sans-serif" font-size="12" fill="#1f2937" text-anchor="middle">78%</text>
-  <text x="330" y="140" font-family="Arial, sans-serif" font-size="10" fill="#374151" text-anchor="middle">Memory</text>
+  <!-- CPU Usage Chart -->
+  <rect x="210" y="75" width="80" height="60" fill="#f8fafc" rx="8"/>
+  <text x="250" y="90" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1f2937" text-anchor="middle">CPU Usage</text>
+  <path d="M215 125 L225 115 L235 120 L245 105 L255 110 L265 100 L275 105 L285 95" stroke="#06b6d4" stroke-width="3" fill="none"/>
+  <circle cx="285" cy="95" r="3" fill="#06b6d4"/>
+  <text x="250" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#059669" text-anchor="middle">72%</text>
   
-  <!-- Laravel 12 Integration -->
-  <rect x="200" y="190" width="180" height="70" fill="white" rx="8"/>
-  <rect x="210" y="200" width="50" height="25" fill="#FF2D20" rx="4"/>
-  <text x="235" y="215" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Laravel 12</text>
-  <text x="210" y="240" font-family="Arial, sans-serif" font-size="12" fill="#1f2937">Server Management API</text>
-  <text x="210" y="255" font-family="Arial, sans-serif" font-size="10" fill="#6b7280">Real-time monitoring & automation</text>
+  <!-- Memory Usage Donut -->
+  <rect x="300" y="75" width="70" height="60" fill="#f8fafc" rx="8"/>
+  <text x="335" y="90" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1f2937" text-anchor="middle">Memory</text>
+  <circle cx="335" cy="110" r="18" stroke="#e5e7eb" stroke-width="4" fill="none"/>
+  <circle cx="335" cy="110" r="18" stroke="#8b5cf6" stroke-width="4" fill="none" 
+          stroke-dasharray="85 28" stroke-linecap="round" transform="rotate(-90 335 110)"/>
+  <text x="335" y="114" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="#1f2937" text-anchor="middle">75%</text>
   
-  <!-- Status Indicators -->
-  <circle cx="350" cy="210" r="8" fill="#22c55e"/>
-  <text x="350" y="214" font-family="Arial, sans-serif" font-size="8" fill="white" text-anchor="middle">✓</text>
-  <text x="350" y="230" font-family="Arial, sans-serif" font-size="8" fill="#374151" text-anchor="middle">Online</text>
+  <!-- System Status -->
+  <rect x="210" y="145" width="160" height="35" fill="#f1f5f9" rx="8"/>
+  <text x="215" y="158" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#1f2937">System Status:</text>
+  
+  <circle cx="225" cy="170" r="4" fill="#22c55e"/>
+  <text x="235" y="174" font-family="Arial, sans-serif" font-size="9" fill="#374151">Load Balancer</text>
+  
+  <circle cx="285" cy="170" r="4" fill="#22c55e"/>
+  <text x="295" y="174" font-family="Arial, sans-serif" font-size="9" fill="#374151">SSL Certificate</text>
+  
+  <circle cx="225" cy="182" r="4" fill="#f59e0b"/>
+  <text x="235" y="186" font-family="Arial, sans-serif" font-size="9" fill="#374151">Disk Usage (85%)</text>
+  
+  <!-- Laravel 12 Management Console -->
+  <rect x="200" y="200" width="180" height="80" fill="white" rx="12"/>
+  <rect x="210" y="210" width="160" height="25" fill="url(#laravel-red)" rx="6"/>
+  <text x="290" y="225" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Laravel 12 Server Management</text>
+  
+  <text x="210" y="250" font-family="Arial, sans-serif" font-size="10" fill="#374151">• Real-time server monitoring</text>
+  <text x="210" y="262" font-family="Arial, sans-serif" font-size="10" fill="#374151">• Automated backup management</text>
+  <text x="210" y="274" font-family="Arial, sans-serif" font-size="10" fill="#374151">• Performance optimization alerts</text>
   
   <!-- Connection Lines -->
-  <line x1="180" y1="120" x2="200" y2="100" stroke="rgba(255,255,255,0.5)" stroke-width="2" stroke-dasharray="5,5"/>
-  <line x1="180" y1="140" x2="200" y2="120" stroke="rgba(255,255,255,0.5)" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="180" y1="100" x2="200" y2="90" stroke="#06b6d4" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+  <line x1="180" y1="125" x2="200" y2="115" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
+  <line x1="180" y1="155" x2="200" y2="145" stroke="#22c55e" stroke-width="2" stroke-dasharray="5,5" opacity="0.7"/>
   
-  <!-- Stats -->
-  <rect x="20" y="270" width="360" height="25" fill="rgba(255,255,255,0.1)" rx="4"/>
-  <text x="70" y="285" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">15 Servers</text>
-  <text x="150" y="285" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">99.9% Uptime</text>
-  <text x="250" y="285" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">24/7 Monitoring</text>
-  <text x="330" y="285" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle">Auto-scaling</text>
+  <!-- Network Activity Indicators -->
+  <circle cx="50" cy="220" r="6" fill="#06b6d4">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="50" y="240" font-family="Arial, sans-serif" font-size="8" fill="rgba(255,255,255,0.8)" text-anchor="middle">Network</text>
+  
+  <circle cx="80" cy="220" r="6" fill="#22c55e">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="80" y="240" font-family="Arial, sans-serif" font-size="8" fill="rgba(255,255,255,0.8)" text-anchor="middle">Active</text>
+  
+  <circle cx="110" cy="220" r="6" fill="#f59e0b">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <text x="110" y="240" font-family="Arial, sans-serif" font-size="8" fill="rgba(255,255,255,0.8)" text-anchor="middle">Warning</text>
+  
+  <!-- Statistics Footer -->
+  <rect x="20" y="265" width="360" height="30" fill="rgba(0,0,0,0.3)" rx="8"/>
+  <text x="40" y="278" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#22c55e">15 Servers</text>
+  <text x="40" y="290" font-family="Arial, sans-serif" font-size="8" fill="rgba(255,255,255,0.8)">Online</text>
+  
+  <text x="120" y="278" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#06b6d4">99.9%</text>
+  <text x="120" y="290" font-family="Arial, sans-serif" font-size="8" fill="rgba(255,255,255,0.8)">Uptime</text>
+  
+  <text x="180" y="278" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#8b5cf6">24/7</text>
+  <text x="180" y="290" font-family="Arial, sans-serif" font-size="8" fill="rgba(255,255,255,0.8)">Monitoring</text>
+  
+  <text x="240" y="278" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#f59e0b">Auto-scale</text>
+  <text x="240" y="290" font-family="Arial, sans-serif" font-size="8" fill="rgba(255,255,255,0.8)">Enabled</text>
+  
+  <text x="320" y="278" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#ef4444">Laravel 12</text>
+  <text x="320" y="290" font-family="Arial, sans-serif" font-size="8" fill="rgba(255,255,255,0.8)">Management</text>
 </svg>
