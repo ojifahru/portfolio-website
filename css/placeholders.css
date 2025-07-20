@@ -1,0 +1,104 @@
+/* Placeholder styles untuk gambar yang belum tersedia */
+
+/* Profile placeholder */
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-img:empty,
+.profile-img img[alt="Profile Picture"]:not([src*="data:"]):not([src*="http"]) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.profile-img:empty::before {
+    content: "OF";
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Project image placeholders */
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-image:has(img[alt="Project 1"]):has(img:not([src*="data:"]):not([src*="http"])) {
+    background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.project-image:has(img[alt="Project 2"]):has(img:not([src*="data:"]):not([src*="http"])) {
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.project-image:has(img[alt="Project 3"]):has(img:not([src*="data:"]):not([src*="http"])) {
+    background: linear-gradient(135deg, #fd79a8 0%, #e84393 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Alternative approach dengan JavaScript untuk browser compatibility */
+.project-placeholder {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 15px 15px 0 0;
+}
+
+.project-placeholder-1 {
+    background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%);
+}
+
+.project-placeholder-2 {
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+}
+
+.project-placeholder-3 {
+    background: linear-gradient(135deg, #00b894 0%, #00a085 100%);
+}
+
+.profile-placeholder {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 5rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    animation: float 6s ease-in-out infinite;
+    border: 5px solid rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Oji Fahruroji - University Web Developer dan Server Administrator dari Brebes, Indonesia. Berpengalaman dalam Laravel, CodeIgniter, E-Learning, E-Library, E-Jurnal dan manajemen server universitas.">
+    <meta name="keywords"
+        content="Laravel Developer, CodeIgniter, PHP Developer, Server Administrator, University Systems, E-Learning, E-Library, E-Jurnal, Web Developer Brebes">
+    <meta name="author" content="Oji Fahruroji">
+    <title>Oji Fahruroji - University Web Developer & Server Administrator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/placeholders.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h3 data-id="loading-text">Loading Portfolio...</h3>
+            <div class="loading-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link" data-id="nav-home">Beranda</a>
+                <a href="#about" class="nav-link" data-id="nav-about">Tentang</a>
+                <a href="#skills" class="nav-link" data-id="nav-skills">Keahlian</a>
+                <a href="#projects" class="nav-link" data-id="nav-projects">Proyek</a>
+                <a href="#contact" class="nav-link" data-id="nav-contact">Kontak</a>
+                <div class="language-toggle">
+                    <button id="lang-toggle" class="lang-btn">
+                        <span class="flag">🇬🇧</span>
+                        <span class="lang-text">EN</span>
+                    </button>
+                </div>
+                <div class="theme-toggle">
+                    <button id="theme-toggle" class="theme-btn">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles-bg"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text-animated">
+                    <div class="hero-greeting">
+                        <span class="greeting-text" data-id="hero-greeting">👋 Halo, Saya</span>
+                    </div>
+                    <h1><span class="highlight">Oji Fahruroji</span></h1>
+                    <h2 data-id="hero-title">University Web Developer & Server Administrator</h2>
+                    <div class="typing-container">
+                        <span class="typing-prefix" data-id="hero-typing-prefix">Saya adalah </span>
+                        <span class="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p data-id="hero-description">Berpengalaman dalam mengembangkan dan mengelola sistem informasi
+                        akademik universitas.
+                        Spesialis dalam Laravel, CodeIgniter, dan infrastruktur server untuk mendukung ekosistem
+                        pendidikan digital.</p>
+                    <div class="hero-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span data-id="hero-highlight-1">University Systems Expert</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span data-id="hero-highlight-2">Laravel & CodeIgniter Specialist</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span data-id="hero-highlight-3">Server Security & Management</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary btn-glow interactive-btn">
+                        <i class="fas fa-eye"></i> <span data-id="btn-view-projects">Lihat Proyek</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary btn-glow interactive-btn">
+                        <i class="fas fa-envelope"></i> <span data-id="btn-contact">Hubungi Saya</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="5000">0</div>
+                        <div class="stat-label" data-id="stat-users">Active Users</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label" data-id="stat-projects">Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="99">0</div>
+                        <div class="stat-label" data-id="stat-uptime">% Uptime</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-img-container">
+                    <div class="profile-img">
+                        <img src="images/profile.png" alt="Oji Fahruroji Profile Picture">
+                    </div>
+                    <div class="profile-decoration">
+                        <div class="decoration-circle circle-1"></div>
+                        <div class="decoration-circle circle-2"></div>
+                        <div class="decoration-circle circle-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-id="section-about">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro slide-in-left">
+                        <h3 data-id="about-title">University Web Developer & System Administrator</h3>
+                        <p class="lead" data-id="about-lead">Passionate developer dengan dedikasi tinggi dalam membangun
+                            solusi teknologi
+                            untuk dunia pendidikan.</p>
+                    </div>
+
+                    <div class="about-description fade-in">
+                        <p data-id="about-desc-1">Saya bekerja untuk sebuah universitas dengan spesialisasi dalam
+                            pengembangan dan pengelolaan
+                            sistem informasi akademik. Dengan pengalaman mendalam dalam Laravel dan CodeIgniter, saya
+                            telah
+                            membangun berbagai aplikasi yang mendukung proses pembelajaran dan administrasi universitas.
+                        </p>
+
+                        <p data-id="about-desc-2">Selain sebagai developer, saya juga bertanggung jawab dalam mengelola
+                            infrastruktur server,
+                            VPS, dan memastikan semua sistem berjalan dengan optimal, aman, dan dapat diandalkan 24/7
+                            untuk
+                            mendukung ribuan pengguna dalam ekosistem akademik.</p>
+                    </div>
+
+                    <div class="about-expertise scale-in">
+                        <h4 data-id="about-expertise-title">🎓 Sistem Universitas yang Saya Kelola:</h4>
+                        <div class="expertise-grid">
+                            <div class="expertise-item interactive-card">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <div>
+                                    <strong data-id="expertise-elearning-title">E-Learning Platform</strong>
+                                    <span data-id="expertise-elearning-desc">Learning Management System untuk 5000+
+                                        mahasiswa</span>
+                                </div>
+                            </div>
+                            <div class="expertise-item interactive-card">
+                                <i class="fas fa-book"></i>
+                                <div>
+                                    <strong data-id="expertise-elibrary-title">E-Library System</strong>
+                                    <span data-id="expertise-elibrary-desc">Digital library dengan koleksi ribuan buku
+                                        dan jurnal</span>
+                                </div>
+                            </div>
+                            <div class="expertise-item interactive-card">
+                                <i class="fas fa-newspaper"></i>
+                                <div>
+                                    <strong data-id="expertise-ejurnal-title">E-Jurnal Platform</strong>
+                                    <span data-id="expertise-ejurnal-desc">Publikasi jurnal ilmiah dengan peer review
+                                        system</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-info">
+                        <div class="personal-info">
+                            <h4 data-id="personal-info-title">📋 Informasi Personal:</h4>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <i class="fas fa-user"></i>
+                                    <div>
+                                        <strong data-id="info-name-label">Nama Lengkap</strong>
+                                        <span>Oji Fahruroji</span>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <strong data-id="info-email-label">Email</strong>
+                                        <span>ojifahru83@gmail.com</span>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <strong data-id="info-location-label">Lokasi</strong>
+                                        <span data-id="info-location-value">Brebes, Jawa Tengah, Indonesia</span>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <i class="fas fa-briefcase"></i>
+                                    <div>
+                                        <strong data-id="info-position-label">Posisi</strong>
+                                        <span data-id="info-position-value">Senior Web Developer & System Admin</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-quote">
+                        <blockquote>
+                            <i class="fas fa-quote-left"></i>
+                            <span data-id="about-quote-text">"Teknologi adalah alat yang powerful untuk transformasi
+                                pendidikan. Saya berkomitmen
+                                membangun sistem yang tidak hanya functional, tapi juga memberikan impact positif bagi
+                                dunia
+                                akademik."</span>
+                            <i class="fas fa-quote-right"></i>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-id="section-skills">Keahlian</h2>
+            <div class="skills-filter-tabs">
+                <button class="filter-tab active" data-filter="all">Semua</button>
+                <button class="filter-tab" data-filter="frontend">Frontend</button>
+                <button class="filter-tab" data-filter="backend">Backend</button>
+                <button class="filter-tab" data-filter="server">Server</button>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card interactive-card scale-in" data-category="backend">
+                    <div class="skill-icon">
+                        <i class="fab fa-laravel"></i>
+                    </div>
+                    <h3 data-id="skill-laravel-title">Laravel</h3>
+                    <p data-id="skill-laravel-desc">Framework PHP modern untuk pengembangan aplikasi web yang powerful
+                        dan elegant</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card interactive-card scale-in" data-category="backend">
+                    <div class="skill-icon">
+                        <i class="fab fa-php"></i>
+                    </div>
+                    <h3 data-id="skill-codeigniter-title">CodeIgniter</h3>
+                    <p data-id="skill-codeigniter-desc">Framework PHP yang ringan dan mudah digunakan untuk rapid
+                        development</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card interactive-card scale-in" data-category="frontend">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 data-id="skill-html5-title">HTML5</h3>
+                    <p data-id="skill-html5-desc">Membuat struktur website yang semantik dan accessible</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="95"></div>
+                    </div>
+                </div>
+                <div class="skill-card interactive-card scale-in" data-category="frontend">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3 data-id="skill-css3-title">CSS3</h3>
+                    <p data-id="skill-css3-desc">Styling modern dengan flexbox, grid, dan animasi</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="88"></div>
+                    </div>
+                </div>
+                <div class="skill-card interactive-card scale-in" data-category="server">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 data-id="skill-server-title">Server Management</h3>
+                    <p data-id="skill-server-desc">Mengelola server Linux, VPS, dan konfigurasi web server</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="92"></div>
+                    </div>
+                </div>
+                <div class="skill-card interactive-card scale-in" data-category="backend">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 data-id="skill-database-title">Database</h3>
+                    <p data-id="skill-database-desc">MySQL, PostgreSQL, dan optimasi database performance</p>
+                    <div class="skill-progress">
+                        <div class="progress-bar" data-progress="87"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-id="section-projects">Proyek Saya</h2>
+            <div class="projects-grid">
+                <div class="project-card interactive-card fade-in">
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="Project 1">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ojifahru/univbatam" target="_blank" class="project-link"><i
+                                        class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-id="project1-title">University Information System</h3>
+                        <p data-id="project1-desc">Sistem informasi universitas yang terintegrasi, menangani berbagai
+                            aspek akademik termasuk
+                            manajemen mahasiswa, dosen, dan administrasi.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card interactive-card fade-in">
+                    <div class="project-image">
+                        <img src="images/project2.jpg" alt="Project 2">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/ojifahru/manajemen-server" target="_blank"
+                                    class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-id="project2-title">Server Management System</h3>
+                        <p data-id="project2-desc">Sistem manajemen server untuk monitoring dan pengelolaan
+                            infrastruktur IT universitas, dengan
+                            fitur monitoring real-time dan automation.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Linux</span>
+                            <span class="tech-tag">Shell Script</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card interactive-card fade-in">
+                    <div class="project-image">
+                        <img src="images/project3.jpg" alt="Project 3">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-id="project3-title">University Academic Systems</h3>
+                        <p data-id="project3-desc">Pengembangan dan pengelolaan berbagai sistem akademik universitas
+                            termasuk E-Learning,
+                            E-Library, E-Jurnal untuk mendukung kegiatan akademik.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">CodeIgniter</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-id="section-contact">Hubungi Saya</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-id="contact-title">Mari Berkolaborasi!</h3>
+                    <p data-id="contact-description">Saya terbuka untuk peluang kerja baru dan proyek-proyek menarik.
+                        Jangan ragu untuk menghubungi
+                        saya!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>ojifahru83@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+62 123 456 789</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Brebes, Indonesia</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/ojifahru" target="_blank" class="social-link"><i
+                                class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Oji Fahruroji. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
