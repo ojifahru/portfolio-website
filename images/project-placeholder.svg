@@ -1,0 +1,35 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg-gradient)"/>
+  
+  <!-- Browser Window -->
+  <rect x="20" y="40" width="360" height="220" fill="white" rx="8"/>
+  <rect x="20" y="40" width="360" height="30" fill="#f3f4f6" rx="8"/>
+  <circle cx="40" cy="55" r="4" fill="#ef4444"/>
+  <circle cx="55" cy="55" r="4" fill="#f59e0b"/>
+  <circle cx="70" cy="55" r="4" fill="#22c55e"/>
+  
+  <!-- Code Lines -->
+  <rect x="40" y="90" width="80" height="8" fill="#6366f1" opacity="0.3" rx="4"/>
+  <rect x="130" y="90" width="120" height="8" fill="#8b5cf6" opacity="0.3" rx="4"/>
+  <rect x="40" y="110" width="200" height="8" fill="#06b6d4" opacity="0.3" rx="4"/>
+  <rect x="40" y="130" width="150" height="8" fill="#10b981" opacity="0.3" rx="4"/>
+  <rect x="200" y="130" width="100" height="8" fill="#f59e0b" opacity="0.3" rx="4"/>
+  
+  <!-- Laravel Logo -->
+  <text x="200" y="200" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FF2D20" text-anchor="middle">Laravel</text>
+  
+  <!-- University Icon -->
+  <path d="M320 180 L340 170 L360 180 L360 190 L340 200 L320 190 Z" fill="#1f2937"/>
+  <rect x="330" y="200" width="20" height="30" fill="#1f2937"/>
+  <rect x="325" y="205" width="30" height="3" fill="#6366f1"/>
+  <rect x="325" y="215" width="30" height="3" fill="#6366f1"/>
+  <rect x="325" y="225" width="30" height="3" fill="#6366f1"/>
+</svg>

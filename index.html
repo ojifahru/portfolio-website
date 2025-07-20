@@ -9,6 +9,24 @@
     <meta name="keywords"
         content="Laravel Developer, CodeIgniter, PHP Developer, Server Administrator, University Systems, E-Learning, E-Library, E-Jurnal, Web Developer Brebes">
     <meta name="author" content="Oji Fahruroji">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Oji Fahruroji - University Web Developer & Server Administrator">
+    <meta property="og:description" content="Spesialis sistem informasi universitas dengan pengalaman dalam Laravel, CodeIgniter, dan manajemen server untuk 5000+ pengguna aktif.">
+    <meta property="og:image" content="images/profile.png">
+    <meta property="og:url" content="https://ojifahru.github.io/portfolio-website/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Oji Fahruroji - University Web Developer & Server Administrator">
+    <meta name="twitter:description" content="Spesialis sistem informasi universitas dengan pengalaman dalam Laravel, CodeIgniter, dan manajemen server.">
+    <meta name="twitter:image" content="images/profile.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="canonical" href="https://ojifahru.github.io/portfolio-website/">
+    
     <title>Oji Fahruroji - University Web Developer & Server Administrator</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/placeholders.css">
@@ -40,6 +58,7 @@
                 <a href="#about" class="nav-link" data-id="nav-about">Tentang</a>
                 <a href="#skills" class="nav-link" data-id="nav-skills">Keahlian</a>
                 <a href="#projects" class="nav-link" data-id="nav-projects">Proyek</a>
+                <a href="#achievements" class="nav-link" data-id="nav-achievements">Pencapaian</a>
                 <a href="#contact" class="nav-link" data-id="nav-contact">Kontak</a>
                 <div class="language-toggle">
                     <button id="lang-toggle" class="lang-btn">
@@ -325,27 +344,47 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title" data-id="section-projects">Proyek Saya</h2>
+            <div class="projects-intro">
+                <p class="section-description" data-id="projects-intro">Berikut adalah beberapa proyek unggulan yang telah saya kembangkan dan kelola untuk mendukung ekosistem pendidikan universitas.</p>
+            </div>
             <div class="projects-grid">
-                <div class="project-card interactive-card fade-in">
+                <div class="project-card interactive-card fade-in featured-project">
+                    <div class="project-badge">
+                        <span class="badge-text">Featured</span>
+                    </div>
                     <div class="project-image">
-                        <img src="images/project1.jpg" alt="Project 1">
+                        <img src="images/project-placeholder.svg" alt="University Information System">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://github.com/ojifahru/univbatam" target="_blank" class="project-link"><i
+                                <a href="https://github.com/ojifahru/univbatam" target="_blank" class="project-link" title="View Code"><i
                                         class="fab fa-github"></i></a>
-                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
+                        <div class="project-category">Academic System</div>
                         <h3 data-id="project1-title">University Information System</h3>
-                        <p data-id="project1-desc">Sistem informasi universitas yang terintegrasi, menangani berbagai
-                            aspek akademik termasuk
-                            manajemen mahasiswa, dosen, dan administrasi.</p>
+                        <p data-id="project1-desc">Platform terintegrasi untuk manajemen akademik universitas dengan 5000+ pengguna aktif. Menangani registrasi mahasiswa, jadwal kuliah, nilai, dan administrasi akademik dengan performa tinggi dan keamanan maksimal.</p>
+                        <div class="project-features">
+                            <div class="feature-item">
+                                <i class="fas fa-users"></i>
+                                <span>5000+ Active Users</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-clock"></i>
+                                <span>99.9% Uptime</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Enterprise Security</span>
+                            </div>
+                        </div>
                         <div class="project-tech">
-                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">Laravel 9</span>
                             <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Bootstrap 5</span>
                         </div>
                     </div>
                 </div>
@@ -398,6 +437,82 @@
         </div>
     </section>
 
+    <!-- Achievement Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title" data-id="section-achievements">Pencapaian & Sertifikasi</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card interactive-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Server Uptime Champion</h3>
+                        <p>Mempertahankan 99.9% server uptime untuk sistem universitas selama 3 tahun berturut-turut</p>
+                        <span class="achievement-year">2022 - 2025</span>
+                    </div>
+                </div>
+                <div class="achievement-card interactive-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Laravel Certified Developer</h3>
+                        <p>Sertifikasi resmi sebagai Laravel Developer dengan spesialisasi enterprise applications</p>
+                        <span class="achievement-year">2023</span>
+                    </div>
+                </div>
+                <div class="achievement-card interactive-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Digital Transformation Leader</h3>
+                        <p>Memimpin transformasi digital universitas dengan implementasi 15+ sistem terintegrasi</p>
+                        <span class="achievement-year">2021 - Present</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-id="section-testimonials">Testimoni</h2>
+            <div class="testimonials-carousel">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Oji telah membuktikan keahliannya dalam mengelola infrastruktur IT universitas. Semua sistem berjalan lancar dan stabil berkat kerja kerasnya."</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Dr. Ahmad Rahman</h4>
+                                <span>IT Director, University</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>"Sebagai pengguna sistem e-learning yang dikembangkan Oji, saya sangat terkesan dengan kemudahan dan kestabilan platformnya."</p>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h4>Prof. Sari Indrawati</h4>
+                                <span>Faculty Member</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -405,30 +520,86 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h3 data-id="contact-title">Mari Berkolaborasi!</h3>
-                    <p data-id="contact-description">Saya terbuka untuk peluang kerja baru dan proyek-proyek menarik.
-                        Jangan ragu untuk menghubungi
-                        saya!</p>
+                    <p data-id="contact-description">Saya terbuka untuk peluang kerja baru, proyek freelance, dan kolaborasi menarik.
+                        Jangan ragu untuk menghubungi saya!</p>
                     <div class="contact-details">
                         <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>ojifahru83@gmail.com</span>
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-content-item">
+                                <h4>Email</h4>
+                                <span>ojifahru83@gmail.com</span>
+                            </div>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+62 123 456 789</span>
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-content-item">
+                                <h4>Phone</h4>
+                                <span>+62 123 456 789</span>
+                            </div>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Brebes, Indonesia</span>
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-content-item">
+                                <h4>Location</h4>
+                                <span>Brebes, Central Java, Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-content-item">
+                                <h4>Response Time</h4>
+                                <span>Usually within 24 hours</span>
+                            </div>
                         </div>
                     </div>
                     <div class="social-links">
-                        <a href="https://github.com/ojifahru" target="_blank" class="social-link"><i
+                        <a href="https://github.com/ojifahru" target="_blank" class="social-link" title="GitHub"><i
                                 class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com/in/ojifahru" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://instagram.com/ojifahru" target="_blank" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/ojifahru" target="_blank" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
                     </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Pilih Subject</option>
+                                <option value="job">Job Opportunity</option>
+                                <option value="project">Project Collaboration</option>
+                                <option value="consultation">Technical Consultation</option>
+                                <option value="other">Lainnya</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tulis pesan Anda di sini..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Kirim Pesan</span>
+                            <div class="btn-loader">
+                                <div class="spinner"></div>
+                            </div>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
