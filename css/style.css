@@ -1024,12 +1024,14 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(108, 92, 231, 0.9);
+    background: rgba(108, 92, 231, 0.95);
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: all 0.3s ease;
+    border-radius: var(--border-radius-lg);
+    z-index: 10;
 }
 
 .project-card:hover .project-overlay {
@@ -1039,6 +1041,7 @@ body {
 .project-links {
     display: flex;
     gap: 20px;
+    z-index: 11;
 }
 
 .project-link {
@@ -1053,11 +1056,15 @@ body {
     border-radius: 50%;
     transition: all 0.3s ease;
     text-decoration: none;
+    position: relative;
+    z-index: 12;
+    cursor: pointer;
 }
 
 .project-link:hover {
     background: white;
     color: #6c5ce7;
+    transform: scale(1.1);
 }
 
 .project-info {
